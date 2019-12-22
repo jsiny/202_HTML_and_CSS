@@ -8,3 +8,7 @@ article {
   box-sizing: border-box;
   padding: 10px;
 }
+
+dt, dd {
+  display: inline-block;
+}
