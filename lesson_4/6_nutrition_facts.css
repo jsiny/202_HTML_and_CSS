@@ -1,0 +1,39 @@
+body {
+  width: 100%;
+}
+
+html {
+  font-size: 28px;
+}
+
+article {
+  width: 680px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+h1 {
+  font-family: 'Franklin Gothic Heavy', Arial, sans-serif;
+  font-size: 3.3rem;
+}
+
+dt, dd {
+  display: inline-block;
+}
+
+dt {
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+}
+
+/* Your task for this project is to replicate the US-style label shown below 
+(from Wikimedia). You should strive to make it look as much like the original 
+as possible without purchasing fonts: your font stack can use Franklin Gothic
+Heavy for the main heading, and Helvetica Black and Helvetica for the r
+emaining fonts. Keep in mind that not all systems supply these fonts, 
+so add Arial to the list, and let the browser supply a default font if 
+necessary. */
