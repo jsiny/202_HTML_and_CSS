@@ -7,6 +7,7 @@ html {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+/* Create Inner Box */
 article {
   width: 684px;
   border: 0.1rem solid black;
@@ -15,6 +16,7 @@ article {
   padding: 0 10px;
 }
 
+/* Nutrition Facts Typography */
 h1 {
   font-family: 'Franklin Gothic Heavy', 'Arial Black', sans-serif;
   font-size: 2.75rem;
@@ -22,8 +24,19 @@ h1 {
   margin: 0;
 }
 
+/* Servings Sizes Display */
 p {
   margin: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+article > table {
+  margin-top: 2px;
+  border-top: 0.8rem solid black;
 }
 
 dt, dd {
@@ -31,17 +44,7 @@ dt, dd {
 }
 
 dt {
-  font-weight: bold;
+  font-family: 'Helvetica Black', 'Arial Black', sans-serif;
 }
 
-table {
-  width: 100%;
-}
 
-/* Your task for this project is to replicate the US-style label shown below 
-(from Wikimedia). You should strive to make it look as much like the original 
-as possible without purchasing fonts: your font stack can use Franklin Gothic
-Heavy for the main heading, and Helvetica Black and Helvetica for the r
-emaining fonts. Keep in mind that not all systems supply these fonts, 
-so add Arial to the list, and let the browser supply a default font if 
-necessary. */
