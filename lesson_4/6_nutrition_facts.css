@@ -3,19 +3,27 @@ body {
 }
 
 html {
-  font-size: 28px;
+  font-size: 34px;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 article {
-  width: 680px;
-  border: 2px solid black;
+  width: 684px;
+  border: 0.1rem solid black;
   box-sizing: border-box;
-  padding: 10px;
+  margin: auto;
+  padding: 0 10px;
 }
 
 h1 {
-  font-family: 'Franklin Gothic Heavy', Arial, sans-serif;
-  font-size: 3.3rem;
+  font-family: 'Franklin Gothic Heavy', 'Arial Black', sans-serif;
+  font-size: 2.75rem;
+  /* font-size: 93px; */
+  margin: 0;
+}
+
+p {
+  margin: 0;
 }
 
 dt, dd {
