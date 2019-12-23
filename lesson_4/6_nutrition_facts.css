@@ -35,8 +35,21 @@ table {
 }
 
 article > table {
-  margin-top: 2px;
-  border-top: 0.8rem solid black;
+  margin-top: 3px;
+  border-top: 0.9rem solid black;
+}
+
+dl {
+  margin: 0;
+}
+
+/* Adjust Amount per Serving Text Size */
+thead > tr:first-of-type {
+  font-size: 0.75rem;
+}
+
+th {
+  text-align: left;
 }
 
 dt, dd {
