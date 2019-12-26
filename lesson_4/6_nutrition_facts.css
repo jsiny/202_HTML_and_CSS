@@ -140,7 +140,14 @@ table:first-of-type tbody {
   border-bottom: solid black 20px;
 } 
 
+/* ------ ASIDE ------- */
 
+aside {
+  font-size: 0.9rem;
+  margin-top: 14px;
+  padding-left: 19px;
+  text-indent: -19px;
+}
 
 /* ------ PREVIOUS VERSION TO MATCH IMAGE ------- */
 
