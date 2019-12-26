@@ -17,8 +17,6 @@ article {
 
 /* Nutrition Facts Typography */
 h1 {
-  /* font-family: 'Franklin Gothic Heavy', 'Arial Black', sans-serif; */
-  /* font-size: 93px; */
   font-size: 2rem;
   margin: 0;
 }
@@ -28,29 +26,29 @@ p {
   margin: 0;
 }
 
-table {
+table:first-of-type {
   width: 100%;
   border-collapse: collapse;
 }
 
-main > table {
+table:first-of-type {
   margin-top: 5px;
   border-top: 1.1rem solid black;
 }
 
 /* Only add bottom border to first table */
-main tr {
+table:first-of-type tr {
   border-bottom: black 1px solid;
 }
 
-/* Align right second column */
-main td:nth-child(1),
-main th:nth-child(1) {
+/* Align left the first column, and align right the second column */
+table:first-of-type td:nth-child(1),
+table:first-of-type th:nth-child(1) {
   text-align: left;
 }
 
-main th:nth-child(2),
-main td:nth-child(2) {
+table:first-of-type th:nth-child(2),
+table:first-of-type td:nth-child(2) {
   text-align: right;
 }
 
@@ -64,7 +62,7 @@ dt, dd {
   display: inline-block;
 }
 
-/* Previous version */
+/* Previous version to match image */
 
 /* dt {
   font-family: 'Helvetica Black', 'Arial Black', sans-serif;
@@ -75,3 +73,7 @@ dt, dd {
   font-size: 0.75rem;
 } */
 
+/* h1 {
+  font-family: 'Franklin Gothic Heavy', 'Arial Black', sans-serif;
+  font-size: 93px;
+} */
