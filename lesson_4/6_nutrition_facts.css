@@ -17,6 +17,18 @@ article {
   padding: 10px 15px;
 }
 
+/* ------ ALL TABLES ------- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td, dl {
+  padding: 0;
+  margin: 0;
+}
+
 /* ------ HEADER ------- */
 
 /* Nutrition Facts Typography */
@@ -31,11 +43,6 @@ p {
 }
 
 /* ------ FIRST TABLE ------- */
-
-table:first-of-type {
-  width: 100%;
-  border-collapse: collapse;
-}
 
 table:first-of-type {
   margin-top: 5px;
@@ -68,11 +75,9 @@ thead dt {
 
 th {
   font-weight: 400;
-  padding: 0;
 }
 
-dl {
-  margin: 0;
+thead dl {
   padding: 5px 0;
 }
 
@@ -95,14 +100,22 @@ dd {
 table:first-of-type tbody tr:first-of-type td {
   font-weight: bold;
   text-align: right;
-  padding-top: 11px;
+  padding: 11px 1px 1px 0;
 }
 
 sup {
   vertical-align: 3px;
 }
 
+/* Typography Percentages Daily Value  */
 
+table:first-of-type tbody td:nth-child(2) {
+  font-weight: bold;
+}
+
+tbody td {
+  padding: 2px 0;
+}
 
 /* ------ PREVIOUS VERSION TO MATCH IMAGE ------- */
 
