@@ -33,19 +33,31 @@ table {
   border-collapse: collapse;
 }
 
-article > table {
+main > table {
   margin-top: 5px;
   border-top: 1.1rem solid black;
 }
 
+/* Only add bottom border to first table */
+main tr {
+  border-bottom: black 1px solid;
+}
+
+/* Align right second column */
+main td:nth-child(1),
+main th:nth-child(1) {
+  text-align: left;
+}
+
+main th:nth-child(2),
+main td:nth-child(2) {
+  text-align: right;
+}
+
+
 dl {
   margin: 0;
   padding: 5px 0;
-  border-bottom: 1px solid black;
-}
-
-th {
-  text-align: left;
 }
 
 dt, dd {
