@@ -3,24 +3,23 @@ body {
 }
 
 html {
-  font-size: 34px;
+  font-size: 28px;
   font-family: Helvetica, Arial, sans-serif;
 }
 
 /* Create Inner Box */
 article {
-  width: 684px;
-  border: 0.1rem solid black;
+  width: 680px;
+  border: 2px solid black;
   box-sizing: border-box;
-  margin: auto;
-  padding: 0 10px;
+  padding: 10px 15px;
 }
 
 /* Nutrition Facts Typography */
 h1 {
-  font-family: 'Franklin Gothic Heavy', 'Arial Black', sans-serif;
-  font-size: 2.75rem;
+  /* font-family: 'Franklin Gothic Heavy', 'Arial Black', sans-serif; */
   /* font-size: 93px; */
+  font-size: 2rem;
   margin: 0;
 }
 
@@ -35,17 +34,14 @@ table {
 }
 
 article > table {
-  margin-top: 3px;
-  border-top: 0.9rem solid black;
+  margin-top: 5px;
+  border-top: 1.1rem solid black;
 }
 
 dl {
-  margin: 2.5px 0;
-}
-
-/* Adjust Amount per Serving Text Size */
-thead > tr:first-of-type {
-  font-size: 0.75rem;
+  margin: 0;
+  padding: 5px 0;
+  border-bottom: 1px solid black;
 }
 
 th {
@@ -56,8 +52,14 @@ dt, dd {
   display: inline-block;
 }
 
-dt {
-  font-family: 'Helvetica Black', 'Arial Black', sans-serif;
-}
+/* Previous version */
 
+/* dt {
+  font-family: 'Helvetica Black', 'Arial Black', sans-serif;
+} */
+
+/* Adjust Amount per Serving Text Size */
+/* thead > tr:first-of-type {
+  font-size: 0.75rem;
+} */
 
