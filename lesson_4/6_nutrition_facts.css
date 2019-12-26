@@ -123,9 +123,9 @@ th dt {
   font-weight: bold;
 }
 
-td.sub-nutrient dt {
-  /* margin-left: 10px;
-} */
+td.indent {
+  background-color: red;
+}
 
 /* ------ PREVIOUS VERSION TO MATCH IMAGE ------- */
 
