@@ -14,7 +14,7 @@ article {
   width: 680px;
   border: 2px solid black;
   box-sizing: border-box;
-  padding: 10px 15px;
+  padding: 10px 15px 15px 15px;
 }
 
 /* ------ ALL TABLES ------- */
@@ -147,6 +147,32 @@ aside {
   margin-top: 14px;
   padding-left: 19px;
   text-indent: -19px;
+}
+
+/* ------ SECOND TABLE ------- */
+
+table:last-of-type {
+  margin-top: 14.5px;
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+table:last-of-type th {
+ border-bottom: 1px solid black;
+ padding-bottom: 1px;
+}
+
+table:last-of-type td:first-child,
+table:last-of-type th:first-of-type {
+  width: 240px;
+}
+
+table:last-of-type td {
+  width: 134px;
+}
+
+table:last-of-type td.indent {
+  text-indent: 1.2rem;
 }
 
 /* ------ PREVIOUS VERSION TO MATCH IMAGE ------- */
