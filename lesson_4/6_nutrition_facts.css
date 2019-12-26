@@ -50,8 +50,13 @@ table:first-of-type {
 }
 
 /* Regular horizontal border */
-th, td {
+table:first-of-type td, 
+table:first-of-type th {
   border-top: 1px solid black;
+}
+
+table:first-of-type {
+  border-bottom: 1px solid black;
 }
 
 /* Align left the first column, and align right the second column */
@@ -109,12 +114,12 @@ sup {
 
 /* Typography Percentages Daily Value  */
 
-td:nth-child(2) + td,
+table:first-of-type td:nth-child(2) + td,
 th + td {
   font-weight: bold;
 }
 
-tbody td,
+td,
 tbody th {
   padding: 2px 0;
 }
@@ -125,10 +130,17 @@ th dt {
 }
 
 /* Indent sub-nutrients */
-td.indent {
+table:first-of-type td.indent {
   border-top: none;  
   width: 1rem;
 }
+
+/* Handles third horizontal bar */
+table:first-of-type tbody {
+  border-bottom: solid black 20px;
+} 
+
+
 
 /* ------ PREVIOUS VERSION TO MATCH IMAGE ------- */
 
