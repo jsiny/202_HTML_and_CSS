@@ -1,3 +1,5 @@
+/* ------ ALL PAGE ------- */
+
 body {
   width: 100%;
 }
@@ -15,6 +17,8 @@ article {
   padding: 10px 15px;
 }
 
+/* ------ HEADER ------- */
+
 /* Nutrition Facts Typography */
 h1 {
   font-size: 2rem;
@@ -25,6 +29,8 @@ h1 {
 p {
   margin: 0;
 }
+
+/* ------ FIRST TABLE ------- */
 
 table:first-of-type {
   width: 100%;
@@ -42,16 +48,17 @@ table:first-of-type tr {
 }
 
 /* Align left the first column, and align right the second column */
-table:first-of-type td:nth-child(1),
-table:first-of-type th:nth-child(1) {
+table:first-of-type *:nth-child(1) {
   text-align: left;
 }
 
-table:first-of-type th:nth-child(2),
-table:first-of-type td:nth-child(2) {
+table:first-of-type *:nth-child(2) {
   text-align: right;
 }
 
+table:first-of-type tr:first-of-type th {
+  padding: 10px 0;
+}
 
 dl {
   margin: 0;
@@ -62,7 +69,8 @@ dt, dd {
   display: inline-block;
 }
 
-/* Previous version to match image */
+
+/* ------ PREVIOUS VERSION TO MATCH IMAGE ------- */
 
 /* dt {
   font-family: 'Helvetica Black', 'Arial Black', sans-serif;
