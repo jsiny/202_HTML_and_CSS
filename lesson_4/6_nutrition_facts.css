@@ -48,7 +48,7 @@ table:first-of-type tr {
 }
 
 /* Align left the first column, and align right the second column */
-table:first-of-type *:nth-child(1) {
+table:first-of-type :nth-child(1) {
   text-align: left;
 }
 
@@ -89,6 +89,20 @@ dt, dd {
 dd {
   margin-left: 0;
 }
+
+/* Typography "Daily Value" */
+
+table:first-of-type tbody tr:first-of-type td {
+  font-weight: bold;
+  text-align: right;
+  padding-top: 11px;
+}
+
+sup {
+  vertical-align: 3px;
+}
+
+
 
 /* ------ PREVIOUS VERSION TO MATCH IMAGE ------- */
 
