@@ -117,6 +117,16 @@ tbody td {
   padding: 2px 0;
 }
 
+/* To be re-written with th for subheadings */
+
+th dt {
+  font-weight: bold;
+}
+
+td.sub-nutrient dt {
+  /* margin-left: 10px;
+} */
+
 /* ------ PREVIOUS VERSION TO MATCH IMAGE ------- */
 
 /* dt {
