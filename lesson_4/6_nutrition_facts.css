@@ -58,6 +58,17 @@ table:first-of-type *:nth-child(2) {
 
 table:first-of-type tr:first-of-type th {
   padding: 10px 0;
+  font-weight: bold;
+}
+
+/* Handle boldness for header cells */
+thead dt {
+  font-weight: bold;
+}
+
+th {
+  font-weight: 400;
+  padding: 0;
 }
 
 dl {
@@ -65,10 +76,19 @@ dl {
   padding: 5px 0;
 }
 
+/* Handle second large horizontal line */
+table:first-of-type thead {
+  border-bottom: black solid 15px;
+}
+
+/* Make the nutrient and quantity close */
 dt, dd {
   display: inline-block;
 }
 
+dd {
+  margin-left: 0;
+}
 
 /* ------ PREVIOUS VERSION TO MATCH IMAGE ------- */
 
