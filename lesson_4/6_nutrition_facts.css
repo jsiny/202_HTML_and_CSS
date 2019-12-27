@@ -1,9 +1,5 @@
 /* ------ ALL PAGE ------- */
 
-body {
-  width: 100%;
-}
-
 html {
   font-size: 28px;
   font-family: Helvetica, Arial, sans-serif;
@@ -148,13 +144,11 @@ aside + table {
   margin-top: 14.5px;
   font-size: 0.8rem;
   text-align: left;
-}
-
-aside + table * {
-  border: none;
+  border-bottom: none;
 }
 
 aside + table th {
+  border-top: none;
   border-bottom: 1px solid black;
   padding-bottom: 1px;
 }
@@ -165,6 +159,7 @@ aside + table *:first-of-type {
 
 aside + table td {
   width: 134px;
+  border: none;
 }
 
 td.indent {
