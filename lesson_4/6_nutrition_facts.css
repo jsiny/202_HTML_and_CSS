@@ -24,7 +24,7 @@ table {
   border-collapse: collapse;
 }
 
-th, td, dl {
+th, td, dl, h1, p {
   padding: 0;
   margin: 0;
 }
@@ -34,41 +34,34 @@ th, td, dl {
 /* Nutrition Facts Typography */
 h1 {
   font-size: 2rem;
-  margin: 0;
-}
-
-/* Servings Sizes Display */
-p {
-  margin: 0;
 }
 
 /* ------ FIRST TABLE ------- */
 
-table:first-of-type {
+header + table {
   margin-top: 5px;
   border-top: 1.1rem solid black;
 }
 
 /* Regular horizontal border */
-table:first-of-type td, 
-table:first-of-type th {
+td, th {
   border-top: 1px solid black;
 }
 
-table:first-of-type {
+table {
   border-bottom: 1px solid black;
 }
 
 /* Align left the first column, and align right the second column */
-table:first-of-type :nth-child(1) {
+header + table :nth-child(1) {
   text-align: left;
 }
 
-table:first-of-type *:nth-child(2) {
+header + table *:nth-child(2) {
   text-align: right;
 }
 
-table:first-of-type tr:first-of-type th {
+thead th:only-child {
   padding: 10px 0;
   font-weight: bold;
 }
@@ -87,7 +80,7 @@ thead dl {
 }
 
 /* Handle second large horizontal line */
-table:first-of-type thead {
+header + table thead {
   border-bottom: black solid 15px;
 }
 
@@ -102,7 +95,7 @@ dd {
 
 /* Typography "Daily Value" */
 
-table:first-of-type tbody tr:first-of-type td {
+header + table td:only-child {
   font-weight: bold;
   text-align: right;
   padding: 11px 1px 1px 0;
@@ -114,7 +107,7 @@ sup {
 
 /* Typography Percentages Daily Value  */
 
-table:first-of-type td:nth-child(2) + td,
+header + table td:nth-child(2) + td,
 th + td {
   font-weight: bold;
 }
@@ -130,13 +123,13 @@ th dt {
 }
 
 /* Indent sub-nutrients */
-table:first-of-type td.indent {
+header + table td.indent {
   border-top: none;  
   width: 1rem;
 }
 
 /* Handles third horizontal bar */
-table:first-of-type tbody {
+header + table tbody {
   border-bottom: solid black 20px;
 } 
 
@@ -151,42 +144,29 @@ aside {
 
 /* ------ SECOND TABLE ------- */
 
-table:last-of-type {
+aside + table {
   margin-top: 14.5px;
   font-size: 0.8rem;
   text-align: left;
 }
 
-table:last-of-type th {
- border-bottom: 1px solid black;
- padding-bottom: 1px;
+aside + table * {
+  border: none;
 }
 
-table:last-of-type td:first-child,
-table:last-of-type th:first-of-type {
+aside + table th {
+  border-bottom: 1px solid black;
+  padding-bottom: 1px;
+}
+
+aside + table *:first-of-type {
   width: 240px;
 }
 
-table:last-of-type td {
+aside + table td {
   width: 134px;
 }
 
-table:last-of-type td.indent {
+td.indent {
   text-indent: 1.2rem;
 }
-
-/* ------ PREVIOUS VERSION TO MATCH IMAGE ------- */
-
-/* dt {
-  font-family: 'Helvetica Black', 'Arial Black', sans-serif;
-} */
-
-/* Adjust Amount per Serving Text Size */
-/* thead > tr:first-of-type {
-  font-size: 0.75rem;
-} */
-
-/* h1 {
-  font-family: 'Franklin Gothic Heavy', 'Arial Black', sans-serif;
-  font-size: 93px;
-} */
