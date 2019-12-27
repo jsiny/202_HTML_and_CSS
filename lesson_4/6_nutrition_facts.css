@@ -134,8 +134,8 @@ header + table tbody {
 aside {
   font-size: 0.9rem;
   margin-top: 14px;
-  padding-left: 19px;
-  text-indent: -19px;
+  padding-left: 19.5px;
+  text-indent: -19.5px;
 }
 
 /* ------ SECOND TABLE ------- */
@@ -164,4 +164,14 @@ aside + table td {
 
 td.indent {
   text-indent: 1.2rem;
+}
+
+/* Correct imperfection for 'Less than' column */
+aside + table td:nth-child(2) {
+  text-indent: -1px;
+}
+
+/* Correct imperfection for 2 last headers */
+aside + table th:nth-last-child(-n+2) {
+  text-indent: 1px;
 }
