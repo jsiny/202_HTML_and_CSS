@@ -74,6 +74,18 @@ table {
   border-bottom: 1px solid black;
 }
 
+/* "Daily Value" thead */
+header + table thead th {
+  border-top: black solid 15px;
+  text-align: right;
+  padding: 11px 1px 1px 0;
+  font-weight: bold;
+}
+
+sup {
+  vertical-align: 3px;
+}
+
 /* Align left the first column, and align right the second column */
 header + table {
   text-align: left;
@@ -83,11 +95,6 @@ th {
   font-weight: 400;
 }
 
-/* Handle second large horizontal line */
-/* header + table tbody:first-child {
-  border-bottom: black solid 15px;
-} */
-
 /* Make the nutrient and quantity close */
 dl, dt, dd {
   display: inline-block;
@@ -95,18 +102,6 @@ dl, dt, dd {
 
 dd {
   margin-left: 0;
-}
-
-/* Typography "Daily Value" */
-
-header + table td:only-child {
-  font-weight: bold;
-  text-align: right;
-  padding: 11px 1px 1px 0;
-}
-
-sup {
-  vertical-align: 3px;
 }
 
 /* Typography Percentages Daily Value  */
@@ -118,7 +113,7 @@ th + td {
 }
 
 td,
-tbody:first-child th {
+tbody th {
   padding: 2px 0;
 }
 
@@ -134,12 +129,12 @@ header + table td.indent {
 }
 
 /* Handles third horizontal bar */
-header + table tbody:first-child {
+header + table tbody:first-of-type {
   border-bottom: solid black 20px;
 } 
 
 /* Align right Vitamin Percentages */
-header + table tbody:nth-child(2) td + td {
+header + table tbody + tbody td + td {
   text-align: right;
 }
 
@@ -155,7 +150,7 @@ aside {
 /* ------ SECOND TABLE ------- */
 
 aside + table {
-  margin-top: 14.5px;
+  margin-top: 15px;
   font-size: 0.8rem;
   text-align: left;
   border-bottom: none;
