@@ -20,7 +20,7 @@ table {
   border-collapse: collapse;
 }
 
-th, td, dl, h1, p {
+th, td, dl, h1, h2, p {
   padding: 0;
   margin: 0;
 }
@@ -32,12 +32,38 @@ h1 {
   font-size: 2rem;
 }
 
-/* ------ FIRST TABLE ------- */
-
-header + table {
-  margin-top: 5px;
-  border-top: 1.1rem solid black;
+p + p {
+  margin-bottom: 5px;
 }
+
+/* Amount per Serving Typography */
+h2 {
+  padding: 10px 0;
+  border-top: black solid 1.07rem;
+  border-bottom: black solid 1px;
+  font-size: 1rem;
+}
+
+/* Position and typography for Calories */
+
+header dl {
+  padding: 5px 0;
+}
+
+header dt {
+  font-weight: bold;
+}
+
+header dl + dl * {
+  font-weight: normal;
+}
+
+header dl + dl {
+  text-align: right;
+  float: right;
+}
+
+/* ------ FIRST TABLE ------- */
 
 /* Regular horizontal border */
 td, th {
@@ -49,39 +75,21 @@ table {
 }
 
 /* Align left the first column, and align right the second column */
-header + table :nth-child(1) {
+header + table {
   text-align: left;
-}
-
-header + table *:nth-child(2) {
-  text-align: right;
-}
-
-tbody:first-child th:only-child {
-  padding: 10px 0;
-  font-weight: bold;
-}
-
-/* Handle boldness for header cells */
-tbody:first-child dt {
-  font-weight: bold;
 }
 
 th {
   font-weight: 400;
 }
 
-tbody:first-child dl {
-  padding: 5px 0;
-}
-
 /* Handle second large horizontal line */
-header + table tbody:first-child {
+/* header + table tbody:first-child {
   border-bottom: black solid 15px;
-}
+} */
 
 /* Make the nutrient and quantity close */
-dt, dd {
+dl, dt, dd {
   display: inline-block;
 }
 
@@ -106,10 +114,11 @@ sup {
 header + table td:nth-child(2) + td,
 th + td {
   font-weight: bold;
+  text-align: right;
 }
 
 td,
-tbody:nth-child(2) th {
+tbody:first-child th {
   padding: 2px 0;
 }
 
@@ -125,9 +134,14 @@ header + table td.indent {
 }
 
 /* Handles third horizontal bar */
-header + table tbody:nth-child(2) {
+header + table tbody:first-child {
   border-bottom: solid black 20px;
 } 
+
+/* Align right Vitamin Percentages */
+header + table tbody:nth-child(2) td + td {
+  text-align: right;
+}
 
 /* ------ ASIDE ------- */
 
