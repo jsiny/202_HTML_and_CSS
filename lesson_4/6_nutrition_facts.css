@@ -57,13 +57,13 @@ header + table *:nth-child(2) {
   text-align: right;
 }
 
-thead th:only-child {
+tbody:first-child th:only-child {
   padding: 10px 0;
   font-weight: bold;
 }
 
 /* Handle boldness for header cells */
-thead dt {
+tbody:first-child dt {
   font-weight: bold;
 }
 
@@ -71,12 +71,12 @@ th {
   font-weight: 400;
 }
 
-thead dl {
+tbody:first-child dl {
   padding: 5px 0;
 }
 
 /* Handle second large horizontal line */
-header + table thead {
+header + table tbody:first-child {
   border-bottom: black solid 15px;
 }
 
@@ -109,7 +109,7 @@ th + td {
 }
 
 td,
-tbody th {
+tbody:nth-child(2) th {
   padding: 2px 0;
 }
 
@@ -125,7 +125,7 @@ header + table td.indent {
 }
 
 /* Handles third horizontal bar */
-header + table tbody {
+header + table tbody:nth-child(2) {
   border-bottom: solid black 20px;
 } 
 
