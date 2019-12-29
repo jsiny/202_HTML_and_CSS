@@ -25,6 +25,11 @@ th, td, dl, h1, h2, p {
   margin: 0;
 }
 
+td,
+tbody th {
+  padding: 2px 0;
+}
+
 /* ------ HEADER ------- */
 
 /* Nutrition Facts Typography */
@@ -86,7 +91,7 @@ sup {
   vertical-align: 3px;
 }
 
-/* Align left the first column, and align right the second column */
+/* Align left most text */
 header + table {
   text-align: left;
 }
@@ -105,16 +110,10 @@ dd {
 }
 
 /* Typography Percentages Daily Value  */
-
 header + table td:nth-child(2) + td,
 th + td {
   font-weight: bold;
   text-align: right;
-}
-
-td,
-tbody th {
-  padding: 2px 0;
 }
 
 /* Make the nutrients name bold */
