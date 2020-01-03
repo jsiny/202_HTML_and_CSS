@@ -1,0 +1,44 @@
+body {
+  font: normal 16px Arial, Helvetica, sans-serif;
+} 
+
+fieldset {
+  max-width: 600px;
+  margin: 0 auto;
+  border: none;
+}
+
+ul li {
+  list-style: none;
+  text-indent: -2rem;
+}
+
+dl, dt, dd {
+  margin: 0;
+  display: block;
+}
+
+dt, dd {
+  display: block;
+  box-sizing: border-box;
+}
+
+dt {
+  margin-bottom: 3px;
+}
+
+dd {
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  border: 1px solid lightgray;
+  padding-left: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+  height: 1.5rem;
+  width: 100%;
+}
