@@ -191,3 +191,48 @@ a {
 .nav {
   text-align: center;
 }
+
+/* Dashed separation */
+section.inl-blo {
+  border-bottom: 2px dashed;
+  padding-bottom: 30px;
+}
+
+/* --- FLOATS --- */
+
+.flo h2 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.flo .wrapper * {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  float: left;
+  line-height: 100px;
+}
+
+.flo .fl-1 {
+  background-color: tomato;
+  width: 47%;
+}
+
+.flo .fl-2 {
+  background-color: dodgerblue;
+  width: 53%;
+}
+
+.flo .fl-3 {
+  background-color: green;
+  width: 100%;
+  line-height: 50px;
+  clear: both;
+  float: none;
+}
+
+pre code {
+  display: block;
+  white-space: pre;
+}
