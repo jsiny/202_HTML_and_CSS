@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="8_style.css">
   </head>
   <body>
-    <div class="box">
+    <div class="container">
       <section class="inl">
         <h2>Inline Elements</h2>
         
@@ -17,29 +17,29 @@
         <p>Anchor tags are inline elements: they take up the width required by their content and not the entire width of the page.</p>
         
         <div>
-          Home
-          Portfolio
-          Contact
+          <a href="#">Home</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Contact</a>
         </div>
         
         <h3>What happens when we set a margin on an inline-level element?</h3>
         
         <p>Inline elements ignore top and bottom margins but observe the left and right margins.</p>
         
-        <div>
-          Home
-          Portfolio
-          Contact
+        <div class="margin">
+          <a href="#">Home</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Contact</a>
         </div>
-        
+
         <p>In the above example, we requested a margin of 30px on all sides. However, the browser ignored the top and bottom margins.</p>
         
         <h3>What about padding?</h3>
         
-        <div>
-          Home
-          Portfolio
-          Contact
+        <div class="padding">
+          <a href="#">Home</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Contact</a>
         </div>
         
         <p>Inline elements accept padding on all sides.</p>
@@ -47,9 +47,9 @@
         <h3>Floating Inline Elements</h3>
         
         <div>
-          Home
-          Portfolio
-          Contact
+          <a href="#">Home</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Contact</a>
         </div>
         
         <p>Floating an inline element changes its display value to block, which makes it subject to all block-level characteristics. Thus, floated inline elements can take margins, padding, heights, and widths.</p>
