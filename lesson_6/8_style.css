@@ -7,7 +7,6 @@ body {
   color: #545459;
 }
 
-
 /* --- BOX --- */
 
 .container {
@@ -61,6 +60,24 @@ a {
 /* Example with padding */
 .inl .padding a {
   padding: 30px;
+}
+
+/* Green box */
+.inl .box a {
   color: white;
   background-color: green;
+}
+
+/* Example floating */
+.inl .float a {
+  float: left;
+  margin: 15px;
+  padding: 25px;
+  width: 120px;
+  text-align: center;
+  border: 3px solid darkgreen;
+}
+
+.inl .float {
+  overflow: hidden;
 }
