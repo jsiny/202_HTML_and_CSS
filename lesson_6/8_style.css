@@ -85,9 +85,22 @@ a {
 /* --- BLOCK --- */
 
 /* Example template */
-.blo div {
+.blo div:not(.wrapper) {
   color: #fff;
 }
+
+.blo .wrapper {
+  margin-bottom: 35px;
+}
+
+/* Clearfix */
+.cf::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* First boxes (height and width) */
 
 .blo .box-1 {
   background-color: dodgerblue;
@@ -113,7 +126,53 @@ a {
   padding: 20px;
 }
 
-/* Larger margin before h3 Floating */
-p.separation {
-  margin-bottom: 35px;
+/* Large margin */
+.blo h3.separation {
+  margin-top: 35px;
+}
+
+/* Second boxes (floating without height/width) */
+
+.blo .fl-a * {
+  border: 1px solid red;
+}
+
+.blo .fl-1 {
+  background-color: dodgerblue;
+  float: left;
+}
+
+.blo .fl-2 {
+  background-color: tomato;
+  float: right;
+}
+
+/* Third boxes (floating with width) */
+
+.blo .fl-b {
+  text-align: center;
+  line-height: 70px;
+}
+
+.blo .fl-3 {
+  background-color: tomato;
+  float: left;
+  width: 40%;
+}
+
+.blo .fl-4 {
+  background-color: dodgerblue;
+  float: right;
+  width: 50%;
+}
+
+/* Fourth boxes (block anchor element) */
+
+.blo .fl-c a {
+  display: block;
+  background-color: dodgerblue;
+  color: white;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
 }
