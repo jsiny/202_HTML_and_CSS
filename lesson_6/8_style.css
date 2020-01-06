@@ -89,7 +89,7 @@ a {
   color: #fff;
 }
 
-.blo .wrapper {
+.wrapper {
   margin-bottom: 35px;
 }
 
@@ -175,4 +175,19 @@ a {
   text-align: center;
   margin: 10px;
   padding: 10px;
+}
+
+/* --- INLINE BLOCK --- */
+
+.inl-blo a {
+  display: inline-block;
+  width: 180px;
+  color: white;
+  background-color: dodgerblue;
+  margin: 20px 8px 25px;
+  line-height: 60px;
+}
+
+.nav {
+  text-align: center;
 }
