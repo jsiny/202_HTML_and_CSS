@@ -236,3 +236,47 @@ pre code {
   display: block;
   white-space: pre;
 }
+
+/* --- POSITIONING --- */
+
+li {
+  margin-left: 40px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+ul {
+  margin-bottom: 45px;
+}
+
+.pos div {
+  color: white;
+  border-radius: 10px;
+  padding: 25px 40px;
+  text-align: center;
+}
+
+.pos .fixed {
+  position: fixed;
+  background-color: dodgerblue;
+  left: 35px;
+  bottom: 50px;
+  width: 225px;
+}
+
+.pos .relative {
+  position: relative;
+  background-color: tomato;
+  width: 325px;
+  top: 45px;
+  left: -90px;
+  margin-bottom: 30px;
+}
+
+.pos .absolute {
+  position: absolute;
+  background-color: green;
+  width: 200px;
+  top: -228px;
+  left: 230px;
+}
