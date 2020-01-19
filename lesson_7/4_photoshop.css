@@ -50,8 +50,10 @@ main {
   margin: 0 auto;
   padding: 30px;
   clear: both;
+  overflow: hidden;
   box-sizing: border-box;
   color: #3e606f;
+  box-shadow: 0 5px 5px #b5b5b5;
 }
 
 .masthead { margin-bottom: 40px; }
@@ -66,4 +68,13 @@ p { margin-bottom: 20px; }
 
 figure {
   float: right;
+  padding-left: 30px;
+}
+
+footer {
+  color: #3e606f;
+  font-size: 14px;
+  width: 960px;
+  margin: 0 auto;
+  padding: 15px 0;
 }
