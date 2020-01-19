@@ -108,3 +108,8 @@ figure {
   grid-area: side-img;
   margin: 4px 0 15px 30px;
 }
+
+footer {
+  margin: 10px 0 30px;
+  font-size: 14px;
+}
