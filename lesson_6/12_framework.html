@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Proto Bootstrap</title>
+    <meta charset="utf-8" />
+    <style>
+      ul { padding: 0; }
+
+      .one-fourth {
+        display: inline-block;
+        outline: 1px solid gray;
+        vertical-align: top;
+        width: 25%;
+        float: left;
+        text-align: center;
+      }
+
+      .row::after {
+        clear: both;
+        content: "";
+        display: block;
+        line-height: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="row">
+      <li class="one-fourth">8 GB SD card</li>
+      <li class="one-fourth">16 GB SD card</li>
+      <li class="one-fourth">32 GB SD card</li>
+      <li class="one-fourth">64 GB SD card</li>
+    </ul>
+  </body>
+</html>
