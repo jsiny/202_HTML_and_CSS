@@ -70,15 +70,16 @@ article {
   box-shadow: 0 5px 5px #b5b5b5;
   display: grid;
   grid-template-areas: 
-    "head head"
-    "h2 h2"
-    "first first"
-    "second side-img"
-    "third side-img";
+    "head     head"
+    "h2       h2"
+    "first    first"
+    "second   side-img"
+    "third    side-img"
+    "nil      side-img";
 }
 
 .masthead {
-  margin-bottom: 32px;
+  margin-bottom: 37px;
   grid-area: head;
 }
 
@@ -90,16 +91,20 @@ h2 {
 }
 
 p {
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   line-height: 23px;
 }
 
 .first { grid-area: first; }
 
-.second { grid-area: second; }
+.second { 
+  grid-area: second;
+  margin-bottom: 23px; 
+}
 
 .third { grid-area: third; }
 
 figure {
   grid-area: side-img;
+  margin: 4px 0 15px 30px;
 }
