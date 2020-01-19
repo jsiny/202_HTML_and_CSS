@@ -1,0 +1,60 @@
+@import url("reset.css");
+
+body {
+  background: linear-gradient(#d1dbbd, #fcfff5);
+  background-repeat: no-repeat;
+  font: normal 18px "Roboto Condensed", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  color: #193441;
+  padding: 15px;
+  padding-bottom: 20px;
+  align-items: flex-end;
+}
+
+header img { 
+  padding-left: 4px; 
+  padding-right: 10px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: normal;
+  padding-bottom: 14px;
+  margin-left: -108px;
+}
+
+li {
+  display: inline-block;
+  position: relative;
+  bottom: -20px;
+  background-color: #fCfff5;
+  padding: 10px 35px;
+  /* padding: 10px 0;
+  width: 123px; */
+  margin-right: 5px;
+}
+
+li a {
+  text-decoration: none;
+  color: #91aa9D;
+  display: block;
+  text-align: center;
+}
+
+article {
+  background-color: white;
+  padding: 30px;
+  color: #3e606f;
+}
+
