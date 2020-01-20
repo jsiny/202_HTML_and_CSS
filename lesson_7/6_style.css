@@ -10,9 +10,7 @@ body {
   font-size: 20px;
 }
 
-header {
-  margin: 159px 0 87px;
-}
+header { margin: 159px 0 87px; }
 
 main {
   width: 1000px;
@@ -24,40 +22,50 @@ main {
 
 article {
   background-color: white;
-  padding: 90px;
+  padding: 90px 90px 65px;
 }
 
 h2 {
   font-size: 36px;
   font-weight: 600;
-  color: #2F2840;
-  margin: 10px;
+  color: black;
+  margin: 10px 0 22px;
+  letter-spacing: 0.5px;
 }
 
 h2:before, h2:after {
   content: "\2022";
-  font-size: 1.4rem;
+  font-size: 28px;
   vertical-align: 5px;
-  margin: 0 35px;
+  margin: 0 26px 0 24px;
 }
 
 h3 {
   color: #3e98b2;
   font-size: 24px;
-  margin-bottom: 30px;
+  margin: -2px 0 22px;
+  letter-spacing: 0.8px;
 }
 
-p:first-of-type {
-  margin-bottom: 160px;
+p {
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  line-height: 28px;
 }
+
+p:first-of-type { margin-bottom: 158px; }
 
 footer {
   background-color: #e7e7e7;
   width: 100%;
   margin-bottom: 140px;
+  padding: 33px 0 26px;
 }
 
-a {
-  margin: 35px 60px;
-  display: inline-block;
+
+ul {
+  display: flex;
+  justify-content: center;
 }
+
+li { padding: 0 60.5px; }
