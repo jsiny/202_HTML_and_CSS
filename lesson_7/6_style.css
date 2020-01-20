@@ -1,0 +1,63 @@
+@import url(reset.css);
+
+* { box-sizing: border-box; }
+
+body {
+  text-align: center;
+  color: #45494d;
+  background-image: url("assets/bg_body.gif");
+  font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+header {
+  margin: 150px 0 100px;
+}
+
+main {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article {
+  background-color: white;
+  padding: 90px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #2F2840;
+  margin: 10px;
+}
+
+h2:before, h2:after {
+  content: "\2022";
+  font-size: 1.4rem;
+  vertical-align: 5px;
+  margin: 0 35px;
+}
+
+h3 {
+  color: #3e98b2;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+p:first-of-type {
+  margin-bottom: 160px;
+}
+
+footer {
+  background-color: #e7e7e7;
+  width: 100%;
+  margin-bottom: 140px;
+}
+
+a {
+  margin: 35px 60px;
+  display: inline-block;
+}
