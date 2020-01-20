@@ -4,7 +4,7 @@
 
 body {
   text-align: center;
-  color: #45494d;
+  color: black;
   background-image: url("assets/bg_body.gif");
   font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: 20px;
@@ -58,7 +58,7 @@ p:first-of-type { margin-bottom: 158px; }
 footer {
   background-color: #e7e7e7;
   width: 100%;
-  margin-bottom: 140px;
+  margin-bottom: 143px;
   padding: 33px 0 26px;
 }
 
