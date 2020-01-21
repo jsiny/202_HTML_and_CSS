@@ -1,0 +1,56 @@
+@import url("reset.css");
+
+* { box-sizing: border-box; }
+
+body {
+  background: #2f2840 url("images/bg_body.gif");
+  display: flex;
+  flex-direction: column;
+  font: normal 20px "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+header, main, footer {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  margin: 133px 0 112px;
+}
+
+nav {
+  text-transform: uppercase;
+  font-size: 26px;
+  margin-bottom: 42px;
+}
+
+nav a { 
+  text-decoration: none;
+  color: #cacaca;
+  font-stretch: ultra-expanded;
+
+}
+
+.active a {
+  color: #6db9ff;
+  font-weight: 900;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 32px;
+  letter-spacing: 1px;
+}
+
+main {
+  background-color: white;
+}
+
+footer {
+  background-color: #e7e7e7;
+}
