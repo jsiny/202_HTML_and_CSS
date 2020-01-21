@@ -49,8 +49,51 @@ nav li {
 
 main {
   background-color: white;
+  padding: 80px 0 88px;
+}
+
+article {
+  width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 900;
+  margin: 35px 0 25px;
+  letter-spacing: 1px;
+}
+
+h2:before, h2:after {
+  content: "\2022";
+  font-size: 25px;
+  vertical-align: 7px;
+  padding: 0 25px; 
+}
+
+h3 {
+  color: #3e59b2;
+  font-size: 24px;
+  letter-spacing: 0.9px;
+  margin-bottom: 15px;
+}
+
+article:nth-child(2) h2 {
+  margin: 65px 0 35px;
+}
+
+p {
+  line-height: 27px;
 }
 
 footer {
   background-color: #e7e7e7;
+  font-size: 20px;
+  color: #45494d;
+}
+
+footer p {
+  width: 450px;
+  margin: 0 auto;
+  padding: 83px 0 40px;
 }
