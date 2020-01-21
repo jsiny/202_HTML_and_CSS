@@ -80,13 +80,20 @@ article:nth-child(2) h2 {
   margin: 65px 0 35px;
 }
 
-main img {
+figure {
   margin: 32px 0 35px;
 }
 
-main img:first-of-type {
-  margin-top: 7px;
+#team a {
+  text-decoration: none;
+  color: #3e59b2;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  padding: 125px 30px;
 }
+
+#team img { margin-bottom: 30px; }
 
 p { line-height: 27px; }
 
