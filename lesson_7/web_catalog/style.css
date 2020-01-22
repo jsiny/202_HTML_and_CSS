@@ -1,17 +1,19 @@
 @import url("reset.css");
 
+* { box-sizing: border-box; }
+
 body {
   background-color: #ffd505; 
-  font: normal 16px Arial, Helvetica, sans-serif;
+  font: normal 16px Helvetica, Arial, sans-serif;
 }
 
 header {
   background-color: #047eC1;
   color: white;
-  border-radius: 0 0 15px 15px;
+  border-radius: 0 0 16px 16px;
 }
 
-body, header { 
+main, header { 
   max-width: 900px;
   margin: 0 auto;
 }
@@ -37,26 +39,22 @@ ul {
   margin: 24px 0 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 18px;
-  row-gap: 18px;
+  grid-gap: 18px;
 }
 
 li {
   max-height: 100%;
   background-color: white;
   padding: 15px;
-  box-sizing: border-box;
 }
 
 figure {
   height: 160px;
-  box-sizing: border-box;
   padding-bottom: 20px;
 }
 
 img {
   display: block;
-  max-width: 100%;
   max-height: 100%;
   margin: 0 auto;
 }
@@ -75,9 +73,7 @@ h3 {
   ul { grid-template-columns: repeat(2, 1fr); }
 }
 
-input[type="checkbox"] {
-  display: none;
-}
+input[type="checkbox"] { display: none; }
 
 input:checked + figure img {
   position: absolute;
